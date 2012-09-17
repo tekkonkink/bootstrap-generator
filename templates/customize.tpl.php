@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="container">
-      <form method="post">
+      <form method="post" action="">
         <fieldset id="components">
           <header class="page-header">
             <h1>Components</h1>
