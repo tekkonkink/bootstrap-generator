@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Martin Bean" />
+    <meta name="description" content="Create your own Twitter Bootstrap themes with the Twitter Bootstrap Generator." />
     <title>Bootstrap Generator</title>
     <link rel="shortcut icon" href="assets/ico/favicon.ico" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -12,20 +13,31 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target=".navbar">
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="./" rel="home">Bootstrap Generator</a>
-          <ul class="nav">
-            <li class="active"><a href="#components">Components</a></li>
-            <li><a href="#plugins">jQuery plugins</a></li>
-            <li><a href="#variables">Variables</a></li>
-            <li><a href="#download">Download</a></li>
-          </ul>
+          <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse">
+            <ul class="nav" role="navigation">
+              <li class="active"><a href="#components">Components</a></li>
+              <li><a href="#plugins">jQuery plugins</a></li>
+              <li><a href="#variables">Variables</a></li>
+              <li><a href="#download">Download</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <div class="container">
+      <div class="hero-unit">
+        <h1>Bootstrap Generator</h1>
+        <p>Modify the values below to create your own Twitter Bootstrap theme.</p>
+      </div>
       <form method="post" action="">
         <fieldset id="components">
           <header class="page-header">
