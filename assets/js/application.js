@@ -10,7 +10,9 @@
             var img = [ 'glyphicons-halflings.png', 'glyphicons-halflings-white.png' ];
             
             $('#variables input').each(function() {
-                $(this).val() && (vars[$(this).prev().text()] = $(this).val());
+                var key = $(this).parent().prev('label').text();
+                var value = $(this).val();
+                vars[key] = value;
             });
             
             $.ajax({
